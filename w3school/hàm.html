@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: calc(56%);
+            height: 120px;
+            background: #666;
+        }
+
+        a::after {
+            /* lấy giá trị attr */
+            content: " (" attr(href)")";
+        }   
+        .box::after {
+            content: "Xin chào, helloo mother fucker bro";
+        }
+
+        h1 {
+            background: rgb(137, 19, 19);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box"></div>
+
+    <a href="https://fullstack.edu.vn">học lập trình</a>
+    <h1>CSS functions</h1>
+
+    <ul>
+
+        <li>var()</li>
+        <li>linear-gradient()</li>
+        <!-- sử dụng màu đặt  -->
+        <li>rgba()</li>
+        <li>rgb()</li>
+        <!-- tính toán -->
+        <li>calc()</li>
+        <!-- thuộc tính của html -->
+        <li>attr()</li>
+    </ul>
+</body>
+</html>
